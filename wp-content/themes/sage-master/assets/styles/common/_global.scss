@@ -1,1 +1,27 @@
-
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  color: $black;
+  background: $black;
+}
+.uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+h1,h2,h3,h4,h5,h6 {
+  @extend .uppercase;
+  small {
+    display: block;
+    color: $black;
+  }
+}
+h1 {
+  font-size: 50px;
+}
+.unmargin {
+  margin: 0!important;
+}
+.unmargin-top {
+  margin-top: 0!important;
+}

@@ -1,0 +1,27 @@
+#footer_gray {
+  background: $gray;
+  padding: 30px 0 45px;
+  p {
+    color: $gray-dark;
+  }
+}
+#footer_blue {
+  background: $blue;
+  i {
+    font-size: 28px;
+    color: $white;
+    padding: 0 20px 30px;
+  }
+  p {
+    color: $white;
+    font-weight: bold;
+  }
+  a {
+    color: $white;
+    &:hover, &:focus, &:active {
+      color: $gray-light;
+      text-decoration: none;
+    }
+  }
+}
+

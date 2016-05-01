@@ -1,0 +1,18 @@
+#header {
+  background: rgba($black, .7);
+  border-bottom: 0;
+  .navbar-brand {
+    padding: 12px 15px;
+  }
+  ul li {
+    &.active a {
+      background: $red;
+    }
+    a {
+      color: $white;
+      font-weight: bold;
+      @extend .uppercase;
+      padding: 40px;
+    }
+  }
+}

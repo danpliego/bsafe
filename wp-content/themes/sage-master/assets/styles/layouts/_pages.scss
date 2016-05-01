@@ -1,0 +1,147 @@
+#home {
+  padding-top: 100px;
+  #home-slider {
+    .carousel-control {
+      background: none;
+      width: 5%;
+      opacity: 1;
+    }
+    .carousel-caption {
+      position: absolute;
+      right: 10%;
+      top: 70px;
+      text-align: right;
+      p {
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 12px;
+      }
+    }
+  }
+}
+.section {
+  padding: 80px 0 100px;
+  background: $white;
+}
+.border-right {
+  border-right: 1px solid $gray;
+}
+
+#about_us {
+  position: relative;
+  .img-container {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    text-align: right;
+    img {
+      width: 87%;
+    }
+  }
+}
+
+#levels {
+  position: relative;
+  .section-head {
+    min-height: 410px;
+    h1, small {
+      color: $white;
+    }
+    padding-top: 150px;
+    background: url('../images/bg-levels.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  .page-title {
+    margin-bottom: 60px;
+  }
+  .level {
+    color: $gray-light;
+    a {
+      color: $gray-light;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: $gray;
+      }
+      i {
+        font-size: 10px;
+        margin-left: 3px;
+      }
+    }
+    .wrapper {
+      margin: 0px auto;
+      max-width: 250px;
+      padding: 30px 0;
+    }
+    &:hover {
+      background: lighten($gray-light, 37%);
+      cursor: pointer;
+    }
+  }
+  .more-info {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: $black;
+    color: #fff;
+    text-align: center;
+    padding-top: 200px;
+    z-index: 1031; // 1 above navbar
+    .close-more {
+      font-size: 32px;
+      position: absolute;
+      right: 10%;
+      top: 5%;
+      color: #fff;
+    }
+  }
+}
+
+#areas {
+  .section-head {
+    .page-title {
+      margin-bottom: 60px;
+    }
+    padding-top: 160px;
+    background: url('../images/bg-zonas.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: $white;
+    h1, small, a {
+      color: $white;
+    }
+    a:hover, a:focus, a:active {
+      color: $red;
+      text-decoration: none;
+    }
+  }
+  .box {
+    background: $red;
+    width: 40px;
+    height: 40px;
+    display: block;
+    &:after {
+      content: ' ';
+      width: 36px;
+      height: 36px;
+      background: $red;
+      border: 2px solid $white;
+      position: absolute;
+      display: block;
+      margin-left: 2px;
+      margin-top: 2px;
+    }
+  }
+}
+#contacto {
+  #googlemaps {
+    height: 500px;
+  }
+}

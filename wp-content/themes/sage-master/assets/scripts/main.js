@@ -18,27 +18,52 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        $('.level').on('click', function() {
+          $('.more-info').fadeIn('slow')
+        })
+
+        $('.more-info .close-more').on('click', function() {
+          $('.more-info').fadeOut('slow')
+        })
+
+        function showGoogleMaps(position, centerPosition) {
+          var position = [19.417554, -99.162323]
+          var centerPosition = [19.416967, -99.1574625]
+          var latLng = new google.maps.LatLng(position[0], position[1])
+          var center = new google.maps.LatLng(centerPosition[0], centerPosition[1])
+
+          if ($(window).width() < 768) {
+            center = latLng
+          }
+
+          var mapOptions = {
+            zoom: 16, // initialize zoom level - the max value is 21
+            streetViewControl: false, // hide the yellow Street View pegman
+            scaleControl: true, // allow users to zoom the Google Map
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            center: center,
+            scrollwheel: false
+          }
+
+          var map = new google.maps.Map(document.getElementById('googlemaps'),
+            mapOptions)
+
+          // Show the default red marker at the location
+          var marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            draggable: false,
+            animation: google.maps.Animation.DROP
+          })
+        }
+
+        google.maps.event.addDomListener(window, 'load', showGoogleMaps)
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
-    // Home page
-    'home': {
-      init: function() {
-        // JavaScript to be fired on the home page
-      },
-      finalize: function() {
-        // JavaScript to be fired on the home page, after the init JS
-      }
-    },
-    // About us page, note the change from about-us to about_us.
-    'about_us': {
-      init: function() {
-        // JavaScript to be fired on the about us page
-      }
-    }
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
