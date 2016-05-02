@@ -4,8 +4,12 @@
   p {
     color: $gray-dark;
   }
+  img {
+    margin-top: 10px;
+  }
 }
 #footer_blue {
+  padding: 45px 0 30px;
   background: $blue;
   i {
     font-size: 28px;

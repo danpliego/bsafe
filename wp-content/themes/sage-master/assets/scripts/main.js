@@ -18,19 +18,21 @@
     // All pages
     'common': {
       init: function() {
+        // JavaScript to be fired on all pages
+
         $('.level').on('click', function() {
-          $('.more-info').fadeIn('slow')
-        })
+          $('.more-info').fadeIn();
+        });
 
         $('.more-info .close-more').on('click', function() {
-          $('.more-info').fadeOut('slow')
-        })
+          $('.more-info').fadeOut();
+        });
 
         function showGoogleMaps(position, centerPosition) {
-          var position = [19.417554, -99.162323]
-          var centerPosition = [19.416967, -99.1574625]
-          var latLng = new google.maps.LatLng(position[0], position[1])
-          var center = new google.maps.LatLng(centerPosition[0], centerPosition[1])
+          var position = [19.417554, -99.162323];
+          var centerPosition = [19.416967, -99.1574625];
+          var latLng = new google.maps.LatLng(position[0], position[1]);
+          var center = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
 
           if ($(window).width() < 768) {
             center = latLng
@@ -57,6 +59,23 @@
           })
         }
 
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+            if (windscroll >= 100) {
+                $('.wrapper .sect').each(function(i) {
+                  if ($(this).position().top <= windscroll - 100) {
+                    $('#header li.active').removeClass('active');
+                    $('#header li').eq(i).addClass('active');
+                  }
+                });
+
+            } else {
+                $('#header li.active').removeClass('active');
+                $('#header li:first').addClass('active');
+            }
+
+        }).scroll();​
+
         google.maps.event.addDomListener(window, 'load', showGoogleMaps)
 
       },
@@ -64,6 +83,21 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
     },
+    // Home page
+    'home': {
+      init: function() {
+        // JavaScript to be fired on the home page
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+      }
+    },
+    // About us page, note the change from about-us to about_us.
+    'about_us': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+      }
+    }
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.

@@ -5,7 +5,7 @@
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/certified.png">
     </div>
   </div>
-  <div id="footer_blue" class="text-center section">
+  <div id="footer_blue" class="text-center">
     <div class="container">
       <ul class="list-inline">
         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>

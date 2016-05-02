@@ -16,7 +16,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#home" class="home">Inicio</a></li>
+        <li><a href="#home" class="active">Inicio</a></li>
         <li><a href="#levels">Niveles de Blindaje</a></li>
         <li><a href="#areas">Areas de blindaje</a></li>
         <li><a href="#contacto">Contacto</a></li>
