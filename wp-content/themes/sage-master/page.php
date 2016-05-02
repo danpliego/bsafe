@@ -69,10 +69,10 @@
   <div id="levels" class="sect">
     <div class="section-head section">
       <div class="container">
-        <h1 class="text-right">
-          NIVELES
+        <h1 class="text-right unmargin">
+          NIVELES DE
           <small>
-            DE BLINDAJE
+            BLINDAJE
           </small>
         </h1>
       </div>
@@ -228,10 +228,10 @@
     <div class="section">
       <div class="container">
         <div class="row">
-          <div class="col-sm-2 col-sm-offset-2">
+          <div class="col-sm-2 col-sm-offset-2 text-right">
             <span class="box"></span>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-6 area-content">
             <p>
               Piso:
               <br>
@@ -246,6 +246,20 @@
 
   <div id="contacto" class="sect">
     <div id="googlemaps"></div>
+    <div class="contact-content">
+      <h1 class="unmargin-top">
+        Contacto
+      </h1>
+      <p class="text-right">
+        <strong>
+          Carr Federal México Toluca 3128
+          <br>Abdías García Soto, 05530
+          <br>Ciudad de México, D.F.
+          <br>TEL: 01 55 5700 0202
+        </strong>
+      </p>
+      <?php echo do_shortcode( '[contact-form-7 id="9" title="Contact form 1"]' ); ?>
+    </div>
   </div>
 
 </div>

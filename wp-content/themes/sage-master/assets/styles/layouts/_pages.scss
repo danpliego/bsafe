@@ -14,7 +14,12 @@
       p {
         text-transform: uppercase;
         color: $white;
+        font-size: 25px;
         letter-spacing: 12px;
+      }
+      h1 {
+        letter-spacing: -1px;
+        color: $white;
       }
     }
   }
@@ -29,13 +34,14 @@
 
 #about_us {
   position: relative;
+  overflow: hidden;
   .img-container {
     position: absolute;
-    right: 0;
-    top: 50px;
+    right: -100px;
+    top: 60px;
     text-align: right;
     img {
-      width: 87%;
+      width: 100%;
     }
   }
 }
@@ -43,7 +49,6 @@
 #levels {
   position: relative;
   .section-head {
-    min-height: 410px;
     h1, small {
       color: $white;
     }
@@ -61,6 +66,7 @@
     color: $gray-light;
     a {
       color: $gray-light;
+      @extend .uppercase;
       &:hover, &:focus, &:active {
         text-decoration: none;
         color: $gray;
@@ -139,9 +145,49 @@
       margin-top: 2px;
     }
   }
+  .area-content {
+    border-left: 1px solid $gray-light;
+    padding-left: 60px;
+  }
 }
 #contacto {
+  position: relative;
   #googlemaps {
-    height: 500px;
+    height: 700px;
+  }
+  .contact-content {
+    padding: 30px;
+    position: absolute;
+    top: 100px;
+    width: 450px;
+    right: 0;
+    bottom: 0;
+    background: rgba($blue, .9);
+    color: $white;
+    h1, h3 {
+      color: $white;
+    }
+    .wpcf7-form {
+      font-weight: bold;
+      font-size: 12px;
+      input, textarea {
+        width: 100%;
+        border: 0;
+        margin-top: 5px;
+        height: 34px;
+        padding: 6px 12px;
+        color: $gray-dark;
+      }
+      textarea {
+        height: 70px;
+      }
+      .wpcf7-submit {
+        @extend .uppercase;
+        float: right;
+        width: auto;
+        background: $red;
+        color: $white;
+      }
+    }
   }
 }

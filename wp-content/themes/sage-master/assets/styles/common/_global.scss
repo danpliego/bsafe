@@ -3,7 +3,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-size: 15px;
   font-weight: 100;
-  color: $black;
+  color: $gray;
   background: $black;
 }
 .uppercase {
@@ -12,13 +12,16 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   @extend .uppercase;
+  color: $blue-dark;
   small {
     display: block;
-    color: $black;
+    color: $blue-dark;
+    font-size: .5em;
+    font-weight: 100;
   }
 }
 h1 {
-  font-size: 50px;
+  font-size: 70px;
 }
 .unmargin {
   margin: 0!important;
