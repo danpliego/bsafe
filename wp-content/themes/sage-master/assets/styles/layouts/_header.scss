@@ -13,6 +13,9 @@
       font-weight: bold;
       @extend .uppercase;
       padding: 40px;
+      &:hover, &:focus, &:active {
+        background: rgba($blue, .2);
+      }
     }
   }
 }

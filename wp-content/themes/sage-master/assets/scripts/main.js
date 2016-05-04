@@ -28,15 +28,37 @@
           $('.more-info').fadeOut();
         });
 
-        function showGoogleMaps(position, centerPosition) {
+        function showGoogleMaps() {
           var position = [19.3539765, -99.2932529];
           var centerPosition = [19.3539765, -99.2908529];
           var latLng = new google.maps.LatLng(position[0], position[1]);
           var center = new google.maps.LatLng(centerPosition[0], centerPosition[1]);
 
           if ($(window).width() < 768) {
-            center = latLng
+            center = latLng;
           }
+
+          var styleArray = [
+            {
+              featureType: "all",
+              stylers: [
+               { saturation: -80 }
+              ]
+            },{
+              featureType: "road.arterial",
+              elementType: "geometry",
+              stylers: [
+                { hue: "#00ffee" },
+                { saturation: 50 }
+              ]
+            },{
+              featureType: "poi.business",
+              elementType: "labels",
+              stylers: [
+                { visibility: "off" }
+              ]
+            }
+          ];
 
           var mapOptions = {
             zoom: 16, // initialize zoom level - the max value is 21
@@ -44,11 +66,12 @@
             scaleControl: true, // allow users to zoom the Google Map
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             center: center,
-            scrollwheel: false
-          }
+            scrollwheel: false,
+            styles: styleArray
+          };
 
           var map = new google.maps.Map(document.getElementById('googlemaps'),
-            mapOptions)
+            mapOptions);
 
           // Show the default red marker at the location
           var marker = new google.maps.Marker({
@@ -56,7 +79,7 @@
             map: map,
             draggable: false,
             animation: google.maps.Animation.DROP
-          })
+          });
         }
 
         $(window).scroll(function() {
@@ -73,10 +96,9 @@
                 $('#header li.active').removeClass('active');
                 $('#header li:first').addClass('active');
             }
+          }).scroll();
 
-        }).scroll();​
-
-        google.maps.event.addDomListener(window, 'load', showGoogleMaps)
+        google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 
       },
       finalize: function() {

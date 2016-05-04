@@ -34,13 +34,14 @@
 
 #about_us {
   position: relative;
-  overflow: hidden;
   .img-container {
     position: absolute;
-    right: -100px;
-    top: 60px;
+    right: -320px;
+    top: 70px;
     text-align: right;
+    z-index: 1;
     img {
+      max-width: 1050px;
       width: 100%;
     }
   }
@@ -53,7 +54,7 @@
       color: $white;
     }
     padding-top: 150px;
-    background: url('../images/bg-levels.png') no-repeat center center fixed;
+    background: url('../images/bg-levels.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -148,6 +149,17 @@
   .area-content {
     border-left: 1px solid $gray-light;
     padding-left: 60px;
+  }
+  h3 {
+    color: #fff;
+  }
+  .areas-types > div {
+    &:first-child {
+      border-right: 2px dotted $white;
+    }
+    &:last-child {
+      padding-left: 60px;
+    }
   }
 }
 #contacto {

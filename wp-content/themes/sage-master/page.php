@@ -44,13 +44,13 @@
   <div id="about_us" class="section sect">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-5">
           <h1 class="unmargin-top">
             El Blindaje
             <small>Más Confiable</small>
             </h1>
           <p>
-            Debido a la situacion que vivimos en nuestro pais, B-SAFE se caracteriza por brindarle la mayor seguridad que su familia y seres queridos necesitan, es por eso que nos preocupamos en brindarle la mayor tranquilidad que existe.
+            Debido a la situacion que vivimos en nuestro pais, <strong>B-SAFE</strong> se caracteriza por brindarle la mayor seguridad que su familia y seres queridos necesitan, es por eso que nos preocupamos en brindarle la mayor tranquilidad que existe.
           </p>
           <p>
             Nos hemos dado la tarea de entrenar a nuestro equipo en el extranjero para poderle brindar un excelente servicio y materiales de calidad.
@@ -80,15 +80,15 @@
     <div class="section">
       <div class="container">
         <div class="row page-title">
-          <div class="col-sm-5 col-sm-offset-1">
-            <h1 class="unmargin border-right">
+          <div class="col-md-4">
+            <h2 class="unmargin border-right text-center">
               CADA NIVEL
               <small>
                 PARA CADA NECESIDAD
               </small>
-            </h1>
+            </h2>
           </div>
-          <div class="col-sm-6">
+          <div class="col-md-8">
             <p class="unmargin">
               Debido a la situacion que vivimos en nuestro pais, B-SAFE se caracteriza por brindarle la mayor seguridad que su familia y seres queridos necesitan, es por eso que nos preocupamos en brindarle la mayor tranquilidad que existe.
             </p>
@@ -139,7 +139,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4 col-sm-offset-1 text-center level">
+          <div class="col-sm-4 col-sm-offset-2 text-center level">
             <div class="wrapper">
               <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-4.png">
               <h4>
@@ -182,15 +182,26 @@
     <div class="section-head section">
       <div class="container">
         <h1 class="text-center page-title">
-          Areas
-          <small> de blindaje</small>
+          Areas de
+          <small>blindaje</small>
         </h1>
-        <div class="row">
-          <div class="col-sm-6">
-            <h1>Zona Opaca</h1>
+        <div class="row areas-types">
+          <div class="col-sm-5 col-lg-offset-2">
             <div class="row">
               <div class="col-sm-6">
+                <h3 class="unmargin-top">Zona Opaca:</h3>
                 <ul class="list-unstyled">
+                  <li><a href="#">Techo</a></li>
+                  <li><a href="#">Coronas</a></li>
+                  <li><a href="#">Postes A,B,C,D</a></li>
+                  <li><a href="#">Marcos</a></li>
+                  <li><a href="#">Puertas</a></li>
+                  <li><a href="#">Costados</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-5">
+                <ul class="list-unstyled">
+                  <li><a href="#">Quinta puerta</a></li>
                   <li><a href="#">Conchas del saplicadero</a></li>
                   <li><a href="#">Contra chapas</a></li>
                   <li><a href="#">Espejo retrovisor</a></li>
@@ -199,21 +210,10 @@
                   <li><a href="#">Pared de fuego</a></li>
                 </ul>
               </div>
-              <div class="col-sm-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">Techo</a></li>
-                  <li><a href="#">Coronas</a></li>
-                  <li><a href="#">Postes A,B,C,D</a></li>
-                  <li><a href="#">Marcos</a></li>
-                  <li><a href="#">Puertas</a></li>
-                  <li><a href="#">Costados</a></li>
-                  <li><a href="#">Quinta puerta</a></li>
-                </ul>
-              </div>
             </div>
           </div>
-          <div class="col-sm-6">
-            <h1>ZONA TRANSPARENTE:</h1>
+          <div class="col-sm-4">
+            <h3 class="unmargin-top">ZONA TRANSPARENTE:</h3>
             <ul class="list-unstyled">
               <li><a href="#">Parabrisas</a></li>
               <li><a href="#">Medallon / quinta puerta</a></li>
@@ -258,7 +258,7 @@
           <br>TEL: 01 55 5700 0202
         </strong>
       </p>
-      <?php echo do_shortcode( '[contact-form-7 id="9" title="Contact form 1"]' ); ?>
+      <?php echo do_shortcode( '[contact-form-7 id="5" title="Contact form 1"]' ); ?>
     </div>
   </div>
 

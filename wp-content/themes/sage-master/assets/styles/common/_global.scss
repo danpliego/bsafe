@@ -20,8 +20,18 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 100;
   }
 }
+strong {
+  color: $blue-dark;
+}
 h1 {
   font-size: 70px;
+}
+h2 {
+  font-size: 50px;
+  color: $gray;
+  small {
+    color: $gray;
+  }
 }
 .unmargin {
   margin: 0!important;
