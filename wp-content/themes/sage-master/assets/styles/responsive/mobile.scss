@@ -1,0 +1,146 @@
+@media (max-width: $screen-xs-max) {
+	
+  // Header
+
+  #header ul li a {
+    color: $white;
+    font-weight: bold;
+    &:hover, &:active, &:focus {
+      background: none!important;
+    }
+  }
+  .navbar-toggle {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    background: $red;
+    padding: 27px 25px;
+    .icon-bar {
+      height: 5px;
+      background-color: $white;
+      width: 30px;
+    }
+    .icon-bar+.icon-bar {
+      margin-top: 7px;
+    }
+  }
+  .navbar-brand img {
+    height: 60px;
+    width: auto;
+  }
+
+  // Reset
+
+  h1 {
+    font-size: 40px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+  .toggle-collapse {
+    font-size: 24px;
+    padding: 15px 15px 0;
+    color: $gray;
+    display: block;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+      color: $gray-dark;
+    }
+    .open {
+      color: $red;
+      padding-bottom: 15px;
+    }
+    &[aria-expanded="true"] .closed { display: none; }
+    &[aria-expanded="false"] .open {display: none; }
+  }
+  .section-head {
+    padding-top: 0!important;
+    height: 200px;
+    h1 {
+      text-align: center;
+      padding-top: 50px;
+    }
+    .toggle-collapse {
+      color: $white;
+      .open {
+        color: $white;
+      }
+    }
+  }
+  .section {
+    padding: 50px 0;
+  }
+
+  // Home slider 
+
+  #home {
+    padding-top: 83px;
+  	#home-slider {
+  		height: 400px;
+  		.carousel-caption {
+  			text-align: center;
+        margin-top: 50px;
+  		}
+      .carousel-control {
+        width: 10%;
+      }
+  		img {
+  			max-width: none;
+  			height: 400px;
+  		}
+      .carousel-inner img {
+        margin: auto;
+      }
+  	}
+  }
+
+  // About us 
+
+  #about_us {
+    overflow: hidden;
+    .img-container {
+      position: relative;
+      right: 0;
+      top: 0;
+      img {
+        width: 600px;
+      }
+    }
+  }
+
+  // Areas
+
+  #areas .section-head {
+    height: auto;
+    .page-title {
+      margin-bottom: 0;
+    }
+  }
+
+  // Contacto
+  #contacto {
+    #googlemaps {
+      display: none;
+    }
+    .contact-content {
+      top: 0;
+      text-align: center;
+      width: 100%;
+      position: relative;
+      padding: 50px 10%;
+      h1 {
+        margin-bottom: 0;
+      }
+      .toggle-collapse {
+        color: $white;
+        .open {
+          color: $white;
+        }
+      }
+      .collapse .text-right {
+        text-align: center;
+      }
+    }
+  }
+
+}

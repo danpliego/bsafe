@@ -1,4 +1,4 @@
-<nav id="header" class="navbar navbar-default navbar-fixed-top">
+<nav id="header" class="navbar navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">

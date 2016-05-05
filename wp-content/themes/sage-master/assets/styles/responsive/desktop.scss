@@ -1,0 +1,26 @@
+@media (min-width: $screen-xs-max) {
+  .collapse {
+    display: block;
+    height: auto;
+  }
+  .col-xs-offset-3.level {
+    margin-left: 0!important;
+  }
+  #header {
+    ul li {
+      &.active a {
+        background: $red;
+      }
+      a {
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 40px;
+        &:hover, &:focus, &:active {
+          background: rgba($blue, .2);
+        }
+      }
+    }
+  }
+}
