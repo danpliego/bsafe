@@ -100,6 +100,36 @@
 
         google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 
+
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+
+          if (scroll >= 100) {
+            $("#header").addClass("small-header");
+          } else {
+            $("#header").removeClass("small-header");
+          }
+        });
+
+        $('.areas-types a').on('mouseover', function() {
+            var name = $(this).attr('class');
+
+            $('.car-container a').each(function() {
+              if ($(this).attr('class') === name) {
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active')
+              }
+            });
+
+            $('.area-replace-content span').each(function() {
+              if ($(this).attr('class') === name) {
+                $(this).show();
+                $(this).siblings().hide();
+              }
+            });
+
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

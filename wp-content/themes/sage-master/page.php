@@ -200,30 +200,32 @@
             <i class="fa fa-chevron-up open"></i>
           </a>
         </h1>
-        <div class="collapse" id="collapseAreas">        
+      </div>
+      <div class="collapse" id="collapseAreas">
+        <div class="container">
           <div class="row areas-types">
             <div class="col-sm-5 col-lg-offset-2">
               <div class="row">
                 <div class="col-sm-6">
                   <h3 class="unmargin-top">Zona Opaca:</h3>
                   <ul class="list-unstyled">
-                    <li><a href="#">Techo</a></li>
-                    <li><a href="#">Coronas</a></li>
-                    <li><a href="#">Postes A,B,C,D</a></li>
-                    <li><a href="#">Marcos</a></li>
-                    <li><a href="#">Puertas</a></li>
-                    <li><a href="#">Costados</a></li>
+                    <li><a href="#" class="techo">Techo</a></li>
+                    <li><a href="#" class="coronas">Coronas</a></li>
+                    <li><a href="#" class="postes">Postes A,B,C,D</a></li>
+                    <li><a href="#" class="marcos">Marcos</a></li>
+                    <li><a href="#" class="puertas">Puertas</a></li>
+                    <li><a href="#" class="costados">Costados</a></li>
                   </ul>
                 </div>
                 <div class="col-sm-5">
                   <ul class="list-unstyled">
-                    <li><a href="#">Quinta puerta</a></li>
-                    <li><a href="#">Conchas del saplicadero</a></li>
-                    <li><a href="#">Contra chapas</a></li>
-                    <li><a href="#">Espejo retrovisor</a></li>
-                    <li><a href="#">Faros traseros</a></li>
-                    <li><a href="#">Piso</a></li>
-                    <li><a href="#">Pared de fuego</a></li>
+                    <li><a href="#" class="quinta-puerta">Quinta puerta</a></li>
+                    <li><a href="#" class="conchas">Conchas de saplicadero</a></li>
+                    <li><a href="#" class="contra-chapas">Contra chapas</a></li>
+                    <li><a href="#" class="retrovisor">Espejo retrovisor</a></li>
+                    <li><a href="#" class="faros-traseros">Faros traseros</a></li>
+                    <li><a href="#" class="piso">Piso</a></li>
+                    <li><a href="#" class="pared-de-fuego">Pared de fuego</a></li>
                   </ul>
                 </div>
               </div>
@@ -231,30 +233,51 @@
             <div class="col-sm-4">
               <h3 class="unmargin-top">ZONA TRANSPARENTE:</h3>
               <ul class="list-unstyled">
-                <li><a href="#">Parabrisas</a></li>
-                <li><a href="#">Medallon / quinta puerta</a></li>
-                <li><a href="#">Puertas delanteras</a></li>
-                <li><a href="#">Puertas traseras</a></li>
-                <li><a href="#">Costados traseros</a></li>
+                <li><a href="#" class="parabrisas">Parabrisas</a></li>
+                <li><a href="#" class="medallon">Medallon / quinta puerta</a></li>
+                <li><a href="#" class="puertas-delanteras">Puertas delanteras</a></li>
+                <li><a href="#" class="puertas-traseras">Puertas traseras</a></li>
+                <li><a href="#" class="costados-traseros">Costados traseros</a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="section hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-2 col-sm-offset-2 text-right">
-            <span class="box"></span>
+        <div class="areas-car text-center">
+          <div class="car-container">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/blindaje-car.png">
+            <a href="#" class="techo"></a>
+            <a href="#" class="coronas"></a>
+            <a href="#" class="postes"></a>
+            <a href="#" class="marcos"></a>
+            <a href="#" class="puertas"></a>
+            <a href="#" class="costados"></a>
+            <a href="#" class="quinta-puerta"></a>
+            <a href="#" class="conchas"></a>
+            <a href="#" class="contra-chapas"></a>
+            <a href="#" class="retrovisor"></a>
+            <a href="#" class="faros-traseros"></a>
+            <a href="#" class="piso"></a>
+            <a href="#" class="pared-de-fuego"></a>
+            <a href="#" class="parabrisas"></a>
+            <a href="#" class="medallon"></a>
+            <a href="#" class="puertas-delanteras"></a>
+            <a href="#" class="puertas-traseras"></a>
+            <a href="#" class="costados-traseros"></a>
           </div>
-          <div class="col-sm-6 area-content">
-            <p>
-              Piso:
-              <br>
-              Disponible en los niveles b5 y b6, esta reforzado por Neoflex de 9 capas
-              ue brinda protección contra ataques explosivos.
-            </p>
+        </div>
+        <div class="areas-car-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2 col-sm-offset-2 text-right">
+                <span class="box"></span>
+              </div>
+              <div class="col-sm-6 area-content">
+                <p class="area-replace-content">
+                  <span class="techo">Techo: <br> hola</span>
+                  <span class="coronas">Coronas: <br> hola</span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -271,7 +294,7 @@
         <i class="fa fa-chevron-down closed"></i>
         <i class="fa fa-chevron-up open"></i>
       </a>
-      <div class="collapse" id="collapseContact">      
+      <div class="collapse" id="collapseContact">
         <p class="text-right">
           <strong>
             Carr Federal México Toluca 3128

@@ -34,15 +34,13 @@
 
 #about_us {
   position: relative;
-  overflow: hidden;
   .img-container {
     position: absolute;
-    right: -320px;
+    right: 0px;
     top: 70px;
     text-align: right;
     z-index: 1;
     img {
-      max-width: 1050px;
       width: 100%;
     }
   }
@@ -112,10 +110,10 @@
 
 #areas {
   .section-head {
+    padding-bottom: 0;
     .page-title {
       margin-bottom: 60px;
     }
-    padding-top: 160px;
     background: url('../images/bg-zonas.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -125,7 +123,7 @@
     h1, small, a {
       color: $white;
     }
-    a:hover, a:focus, a:active {
+    a:hover, a:focus, a:active, a.active {
       color: $red;
       text-decoration: none;
     }
@@ -135,6 +133,7 @@
     width: 40px;
     height: 40px;
     display: block;
+    margin: 0px auto;
     &:after {
       content: ' ';
       width: 36px;
@@ -150,6 +149,9 @@
   .area-content {
     border-left: 1px solid $gray-light;
     padding-left: 60px;
+    .area-replace-content span {
+      display: none;
+    }
   }
   h3 {
     color: #fff;
@@ -162,11 +164,107 @@
       padding-left: 60px;
     }
   }
+  .areas-car {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    .car-container {
+      position: relative;
+      display: inline-block;
+      max-width: 850px;
+      img {
+        width: 100%;
+      }
+      a {
+        display: inline-block;
+        border: 2px solid $white;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        &:after {
+          content: ' ';
+          background: $white;
+          width: 16px;
+          display: inline-block;
+          height: 16px;
+          margin-top: 2px;
+        }
+        &.techo {
+          top: -25px; right: 300px;
+        }
+        &.coronas {
+          top: 5px; right: 200px;
+        }
+        &.postes {
+          top: 55px; right: 390px;
+        }
+        &.marcos {
+          top: 50px; right: 230px;
+        }
+        &.puertas {
+          top: 160px; right: 500px;
+        }
+        &.costados {
+          top: 110px; right: 120px;
+        }
+        &.quinta-puerta {
+          top: 75px; right: 25px;
+        }
+        &.conchas {
+          top: 160px; right: 200px;
+        }
+        &.contra-chapas {
+          top: 120px; right: 443px;
+        }
+        &.retrovisor {
+          top: 90px; right: 560px;
+        }
+        &.faros-traseros {
+          top: 120px; right: 15px;
+        }
+        &.piso {
+          top: 260px; right: 500px;
+        }
+        &.pared-de-fuego {
+          top: 130px; right: 680px;
+        }
+        &.parabrisas {
+          top: 30px; right: 550px;
+        }
+        &.medallon {
+          top: 35px; right: 50px;
+        }
+        &.puertas-delanteras {
+          top: 60px; right: 470px;
+        }
+        &.puertas-traseras {
+          top: 60px; right: 315px;
+        }
+        &.costados-traseros {
+          top: 50px; right: 130px;
+        }
+        &.active {
+          border-color: $red;
+          &:after {
+            background: $red;
+          }
+        }
+      }
+    }
+  }
+  .areas-car-info {
+    margin-top: -200px;
+    padding-top: 200px;
+    background: $white;
+    color: $gray;
+    font-weight: bold;
+  }
 }
 #contacto {
   position: relative;
+  padding-top: 58px;
+  background: $white;
   #googlemaps {
-    height: 700px;
+    height: 600px;
   }
   strong {
     color: $white;
@@ -174,12 +272,12 @@
   .contact-content {
     padding: 30px;
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    padding: 50px 20%;
+    right: 0;
+    top: 58px;
+    width: 400px;
     background: rgba($blue, .9);
     color: $white;
+    height: 600px;
     h1, h3 {
       color: $white;
     }
@@ -203,6 +301,13 @@
         width: auto;
         background: $red;
         color: $white;
+      }
+      .wpcf7-response-output {
+        padding: 15px;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 16px;
+        margin: 40px 0 0 0;
       }
     }
   }

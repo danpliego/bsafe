@@ -10,6 +10,9 @@
     ul li {
       &.active a {
         background: $red;
+        &:hover, &:focus, &:active {
+          background: $red;
+        }
       }
       a {
         color: $white;
@@ -20,6 +23,20 @@
         &:hover, &:focus, &:active {
           background: rgba($blue, .2);
         }
+      }
+    }
+    &.small-header {
+      background: $black;
+      a {
+        padding: 20px 30px;
+        font-size: 1em;
+        img {
+          height: 50px;
+          width: auto;
+        }
+      }
+      .navbar-brand {
+        padding: 5px 10px;
       }
     }
   }
