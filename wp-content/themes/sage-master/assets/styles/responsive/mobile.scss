@@ -110,8 +110,20 @@
       right: 0;
       top: 0;
       img {
-        width: 600px;
+        width: 400px;
       }
+    }
+  }
+  .border-right {
+    border: 0;
+  }
+
+  #levels {
+    .page-title {
+      margin-bottom: 0;
+    }
+    #levels-slider img {
+      max-width: 90%;
     }
   }
 
