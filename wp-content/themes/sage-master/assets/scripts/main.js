@@ -20,11 +20,14 @@
       init: function() {
         // JavaScript to be fired on all pages
 
-        $('.level').on('click', function() {
+        $('.level').on('click', function(e) {
+          e.preventDefault();
           $('.more-info').fadeIn();
+          $('#levels-slider').carousel($(this).index());
         });
 
-        $('.more-info .close-more').on('click', function() {
+        $('.more-info .close-more').on('click', function(e) {
+          e.preventDefault();
           $('.more-info').fadeOut();
         });
 
@@ -111,13 +114,15 @@
           }
         });
 
+        // Areas types affect boxes and results
+
         $('.areas-types a').on('mouseover', function() {
             var name = $(this).attr('class');
 
             $('.car-container a').each(function() {
               if ($(this).attr('class') === name) {
                 $(this).addClass('active');
-                $(this).siblings().removeClass('active')
+                $(this).siblings().removeClass('active');
               }
             });
 
@@ -128,6 +133,32 @@
               }
             });
 
+        });
+
+        // Boxes affects areas types and results
+
+        $('.car-container a').on('mouseover', function() {
+          var pinName = $(this).attr('class');
+          $(this).siblings().removeClass('active');
+
+          $('.areas-types a').each(function() {
+              if ($(this).attr('class') === pinName) {
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+              }
+            });
+
+          $('.area-replace-content span').each(function() {
+            if ($(this).attr('class') === pinName) {
+              $(this).show();
+              $(this).siblings().hide();
+            }
+          });
+
+        });
+
+        $('.car-container a').on('mouseout', function() {
+          $('.areas-types a').removeClass('active');
         });
 
       },

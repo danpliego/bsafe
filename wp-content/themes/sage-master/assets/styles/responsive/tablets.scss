@@ -1,0 +1,30 @@
+// Tablets
+
+@media all and (max-width: 992px) and (min-width: 768px) {
+  #about_us .img-container {
+    position: static;
+    margin-top: 30px;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  #contacto .contact-content .wpcf7-form {
+    textarea {
+      height: 40px;
+    }
+    .wpcf7-response-output {
+      font-size: 14px;
+    }
+  }
+  #levels #levels-slider {
+    img {
+      max-width: 650px;
+    }
+    .carousel-control {
+      width: 5%;
+    }
+  }
+}

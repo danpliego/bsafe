@@ -1,3 +1,14 @@
+// Small Desktop
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  #about_us .img-container img {
+    max-width: 550px;
+    margin-top: 50px;
+  }
+}
+
+// Desktop and tablets
+
 @media (min-width: $screen-xs-max) {
   .collapse {
     display: block;

@@ -2,9 +2,16 @@
 
   // Header
 
+  #header {
+    background: $black;
+  }
   #header ul li a {
     color: $white;
     font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
     &:hover, &:active, &:focus {
       background: none!important;
     }
@@ -112,13 +119,18 @@
 
   #areas .section-head {
     height: auto;
-    .page-title {
-      margin-bottom: 0;
+  }
+  #areas .areas-types {
+    text-align: center;
+    padding-bottom: 30px;
+    >div:last-child {
+      padding-left: 15px;
     }
   }
 
   // Contacto
   #contacto {
+    padding-top: 0;
     #googlemaps {
       display: none;
     }
