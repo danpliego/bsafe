@@ -9,7 +9,6 @@
     <div class="container">
       <ul class="list-inline">
         <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
         <li><a href="#"><i class="fa fa-youtube"></i></a></li>
       </ul>
@@ -17,8 +16,6 @@
         <div class="col-sm-10 col-sm-offset-1">
           <p>Copyright © 2016 BSAFE BLINJADES | Todos los derechos reservados | Política de Privacidad
           </p>
-          <p>
-            DISEÑO WEB - <a href="http://gallodesign.mx">GALLODESIGN.mx</a></p>
         </div>
       </div>
     </div>

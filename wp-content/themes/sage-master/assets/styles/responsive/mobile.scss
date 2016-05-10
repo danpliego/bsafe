@@ -121,6 +121,12 @@
   #levels {
     .page-title {
       margin-bottom: 0;
+      h2 {
+        margin-bottom: 30px!important;
+      }
+    }
+    .level .toggle-modal {
+      display: none;
     }
     #levels-slider img {
       max-width: 90%;
@@ -138,6 +144,9 @@
     >div:last-child {
       padding-left: 15px;
     }
+  }
+  #areas .areas-types>div:first-child {
+    border: 0;
   }
 
   // Contacto
