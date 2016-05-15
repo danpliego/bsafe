@@ -194,6 +194,19 @@
       img {
         width: 100%;
       }
+      svg {
+        position: absolute;
+        top: 11px;
+        left: 11px;
+        width: 765px;
+        opacity: 1;
+      }
+      svg > g {
+        opacity: .0;
+      }
+      svg > g:hover {
+        opacity: .8;
+      }
       a {
         display: inline-block;
         border: 2px solid $white;
@@ -215,60 +228,6 @@
             background: $red;
           }
         }
-        &.techo {
-          top: -10px; right: 300px;
-        }
-        &.coronas {
-          top: 15px; right: 200px;
-        }
-        &.postes {
-          top: 70px; right: 390px;
-        }
-        &.marcos {
-          top: 65px; right: 230px;
-        }
-        &.puertas {
-          top: 180px; right: 500px;
-        }
-        &.costados {
-          top: 130px; right: 120px;
-        }
-        &.quinta-puerta {
-          top: 75px; right: 25px;
-        }
-        &.conchas {
-          top: 170px; right: 200px;
-        }
-        &.contra-chapas {
-          top: 120px; right: 445px;
-        }
-        &.retrovisor {
-          top: 95px; right: 560px;
-        }
-        &.faros-traseros {
-          top: 120px; right: 15px;
-        }
-        &.piso {
-          top: 250px; right: 500px;
-        }
-        &.pared-de-fuego {
-          top: 130px; right: 680px;
-        }
-        &.parabrisas {
-          top: 30px; right: 550px;
-        }
-        &.medallon {
-          top: 35px; right: 50px;
-        }
-        &.puertas-delanteras {
-          top: 60px; right: 470px;
-        }
-        &.puertas-traseras {
-          top: 60px; right: 315px;
-        }
-        &.costados-traseros {
-          top: 50px; right: 130px;
-        }
         &.active {
           border-color: $red;
           &:after {
@@ -288,7 +247,6 @@
 }
 #contacto {
   position: relative;
-  padding-top: 58px;
   background: $white;
   #googlemaps {
     height: 600px;
@@ -297,10 +255,10 @@
     color: $white;
   }
   .contact-content {
-    padding: 30px;
+    padding: 90px 30px 30px;
     position: absolute;
     right: 0;
-    top: 58px;
+    top: 0px;
     width: 400px;
     background: rgba($blue, .9);
     color: $white;

@@ -114,51 +114,33 @@
           }
         });
 
-        // Areas types affect boxes and results
 
-        $('.areas-types a').on('mouseover', function() {
-            var name = $(this).attr('class');
-
-            $('.car-container a').each(function() {
-              if ($(this).attr('class') === name) {
-                $(this).addClass('active');
-                $(this).siblings().removeClass('active');
-              }
-            });
-
-            $('.area-replace-content span').each(function() {
-              if ($(this).attr('class') === name) {
-                $(this).show();
-                $(this).siblings().hide();
-              }
-            });
-
+        $('.areas-types a').on('click', function(e) {
+          e.preventDefault();
         });
 
-        // Boxes affects areas types and results
-
-        $('.car-container a').on('mouseover', function() {
+        $('.areas-types a').on('mouseover', function() {
           var pinName = $(this).attr('class');
-          $(this).siblings().removeClass('active');
 
-          $('.areas-types a').each(function() {
-              if ($(this).attr('class') === pinName) {
-                $(this).addClass('active');
-                $(this).siblings().removeClass('active');
-              }
-            });
-
-          $('.area-replace-content span').each(function() {
-            if ($(this).attr('class') === pinName) {
-              $(this).show();
-              $(this).siblings().hide();
+          $('.car-container svg g').each(function() {
+            if ($(this).attr('id') === pinName) {
+              $(this).css('opacity', '.8');
+              $(this).siblings().css('opacity', '0');
             }
           });
 
         });
 
-        $('.car-container a').on('mouseout', function() {
+        $('.car-container svg g').on('mouseover', function() {
+          var svgName = $(this).attr('id');
           $('.areas-types a').removeClass('active');
+
+          $('.areas-types a').each(function() {
+            if ($(this).attr('class') === svgName) {
+              $(this).addClass('active');
+            }
+          });
+
         });
 
       },
