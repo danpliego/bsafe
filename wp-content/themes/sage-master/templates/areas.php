@@ -185,10 +185,7 @@
         <div class="areas-car-info hidden-xs">
           <div class="container">
             <div class="row">
-              <div class="col-sm-2 col-sm-offset-2 text-right">
-                <span class="box"></span>
-              </div>
-              <div class="col-sm-6 area-content">
+              <div class="col-sm-8 col-sm-offset-2 area-content">
                 <p class="area-replace-content">
                   <span class="techo">Techo: <br> test</span>
                   <span class="coronas">Coronas: <br> test</span>

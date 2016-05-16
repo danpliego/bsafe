@@ -11,10 +11,9 @@
     <div class="collapse" id="collapseContact">
       <p class="text-right">
         <strong>
-          Carr Federal México Toluca 3128
-          <br>Abdías García Soto, 05530
-          <br>Ciudad de México, D.F.
-          <br>TEL: 01 55 5700 0202
+          Carretera Federal México Toluca 3128
+          <br>Col. Locaxco
+          <br>Tel 55 57 00 02 02
         </strong>
       </p>
       <?php echo do_shortcode( '[contact-form-7 id="5" title="Contact form 1"]' ); ?>
