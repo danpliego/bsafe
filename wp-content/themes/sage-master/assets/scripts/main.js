@@ -115,15 +115,18 @@
         });
 
 
-        $('.areas-types a').on('click', function(e) {
-          e.preventDefault();
-        });
+        $('.car-container span').on('mouseover', function() {
+          var name = $(this).attr('class');
 
-        $('.areas-types a').on('mouseover', function() {
-          var pinName = $(this).attr('class');
+          $('.area-replace-content span').each(function() {
+            if ($(this).attr('class') === name) {
+              $(this).show();
+              $(this).siblings().hide();
+            }
+          });
 
-          $('.car-container svg g').each(function() {
-            if ($(this).attr('id') === pinName) {
+          $('.car-container svg .parent').each(function() {
+            if ($(this).attr('id') === name) {
               $(this).css('opacity', '.8');
               $(this).siblings().css('opacity', '0');
             }
@@ -131,16 +134,8 @@
 
         });
 
-        $('.car-container svg g').on('mouseover', function() {
-          var svgName = $(this).attr('id');
-          $('.areas-types a').removeClass('active');
-
-          $('.areas-types a').each(function() {
-            if ($(this).attr('class') === svgName) {
-              $(this).addClass('active');
-            }
-          });
-
+        $('.car-container span').mouseleave(function() {
+          $('.car-container svg .parent').css('opacity', '0');
         });
 
       },

@@ -128,9 +128,6 @@
 #areas {
   .section-head {
     padding-bottom: 0;
-    .page-title {
-      margin-bottom: 60px;
-    }
     background: url('../images/bg-zonas.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -186,7 +183,6 @@
   }
   .areas-car {
     margin-top: 30px;
-    padding-bottom: 30px;
     .car-container {
       position: relative;
       display: inline-block;
@@ -204,45 +200,86 @@
       svg > g {
         opacity: .0;
       }
-      svg > g:hover {
-        opacity: .8;
-      }
-      a {
+      span {
         display: inline-block;
-        border: 2px solid $white;
-        width: 20px;
-        height: 20px;
+        border: 1.5px solid $white;
+        width: 14px;
+        height: 14px;
         position: absolute;
-        line-height: 17px;
+        line-height: 9px;
+        border-radius: 50%;
+        z-index: 3;
         &:after {
           content: ' ';
           background: $white;
-          width: 12px;
+          width: 8px;
           display: inline-block;
-          height: 12px;
+          height: 8px;
           margin-top: 0px;
+          border-radius: 50%;
         }
-        &:hover {
-          border-color: $red;
-          &:after {
-            background: $red;
-          }
+        &.techo {
+          top: 10px; right: 300px;
         }
-        &.active {
-          border-color: $red;
-          &:after {
-            background: $red;
-          }
+        &.coronas {
+              top: 25px; right: 208px;
+        }
+        &.postes {
+          top: 75px; right: 367px;
+        }
+        &.puertas {
+          top: 160px; right: 355px;
+        }
+        &.costados {
+          top: 125px; right: 150px;
+        }
+        &.quinta-puerta {
+          top: 75px; right: 30px;
+        }
+        &.conchas {
+          top: 150px; right: 190px;
+        }
+        &.contra-chapas {
+          top: 125px; right: 400px;
+        }
+        &.retrovisor {
+          top: 90px; right: 505px;
+        }
+        &.faros-traseros {
+          top: 120px; right: 20px;
+        }
+        &.piso {
+          top: 230px; right: 450px;
+        }
+        &.pared-de-fuego {
+          top: 140px; right: 555px;
+        }
+        &.parabrisas {
+          top: 70px; right: 540px;
+        }
+        &.medallon {
+          top: 40px; right: 55px;
+        }
+        &.puertas-delanteras {
+          top: 65px; right: 435px;
+        }
+        &.puertas-traseras {
+          top: 65px; right: 300px;
+        }
+        &.costados-traseros {
+          top: 60px; right: 105px;
         }
       }
     }
   }
   .areas-car-info {
-    margin-top: -200px;
+    margin-top: -140px;
+    padding-bottom: 60px;
     padding-top: 200px;
     background: $white;
     color: $gray;
     font-weight: bold;
+    text-align: left;
   }
 }
 #contacto {
