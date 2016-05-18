@@ -9,20 +9,20 @@
       <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/bg-home-1.png">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/bg-home-1.jpg">
           <div class="carousel-caption">
-            <p class="unmargin">Blindando</p>
+            <p class="unmargin">Tu proteccción es nuestra</p>
             <h1 class="unmargin">
-              Tu Seguridad
+              Responsabilidad
             </h1>
           </div>
         </div>
         <div class="item">
-          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/bg-home-1.png">
+          <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/bg-home-2.jpg">
           <div class="carousel-caption">
-            <p class="unmargin">Slide</p>
+            <p class="unmargin">El blindaje más</p>
             <h1 class="unmargin">
-              Numero 2
+              confiable
             </h1>
           </div>
         </div>

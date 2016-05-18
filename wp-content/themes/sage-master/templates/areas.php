@@ -56,23 +56,24 @@
         <div class="car-container">
           <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/blindaje-car.png">
 
-          <span class="techo"></span>
-           <span class="coronas"></span>
-           <span class="postes"></span>
-           <span class="puertas"></span>
-           <span class="costados"></span>
-           <span class="quinta-puerta"></span>
-           <span class="conchas"></span>
-           <span class="contra-chapas"></span>
-           <span class="retrovisor"></span>
-           <span class="faros-traseros"></span>
-           <span class="piso"></span>
-           <span class="pared-de-fuego"></span>
-           <span class="parabrisas"></span>
-           <span class="medallon"></span>
-           <span class="puertas-delanteras"></span>
-           <span class="puertas-traseras"></span>
-           <span class="costados-traseros"></span>
+          <span id="techo" class="techo"></span>
+           <span id="coronas"></span>
+           <span id="postes"></span>
+           <span id="puertas"></span>
+           <span id="costados"></span>
+           <span id="quinta-puerta"></span>
+           <span id="conchas"></span>
+           <span id="contra-chapas"></span>
+           <span id="faros-traseros"></span>
+           <span id="piso"></span>
+           <span id="pared-de-fuego"></span>
+           
+           <span id="vidrios" class="retrovisor"></span>
+           <span id="vidrios" class="parabrisas"></span>
+           <span id="vidrios" class="medallon"></span>
+           <span id="vidrios" class="puertas-delanteras"></span>
+           <span id="vidrios" class="puertas-traseras"></span>
+           <span id="vidrios" class="costados-traseros"></span>
 
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -133,11 +134,6 @@
             <path style="fill:#B90624;" d="M521.4,111.9c0,0,11.6-0.3,18.7-0.3c0,0-0.9-2.7-6.1-2.5c0,0-5.5,0-8.4,0.4
               C525.6,109.3,522.5,109.8,521.4,111.9z"/>
           </g>
-          <g id="retrovisor" class="parent">
-            <path style="fill:#B90624;" d="M264.8,62.5c0,0-8.3-0.2-10.8,8.2l-3.1,9.2l-1.1,4l-0.8,2.6l0.3,2.4l3-0.1l0.7,1.6l-1.8,0.6l0.4,2.1
-              l4.6,0.2l2.3,1.6c0,0,14,2,20.4-0.8c0,0,1.7-7.7,0.9-13.9c0,0-1.6-0.1-2.6-0.1c0,0,0.4-12.2-2.6-17.4
-              C274.5,62.6,270.7,62.1,264.8,62.5z"/>
-          </g>
           <g id="faros-traseros" class="parent">
             <path style="fill:#B90624;" d="M719.4,26.7l-13.1-0.4c0,0,13.8,21.2,25.1,59l3.9,10.2c0,0,3.9,31,2.6,55.9l18.9-0.8
               c0,0-0.3-42.2-1.8-56.1C755.1,94.5,740.4,59.2,719.4,26.7z"/>
@@ -159,26 +155,26 @@
             <path style="fill:#B90624;" d="M203.3,91.6l7.3-0.4l10.9,8.2c0,0-7.3,95.7,18.9,149.6h-9.2c0,0-21.3-58.8-15.8-147.1L203.3,91.6z"
               />
           </g>
-          <g id="parabrisas" class="parent">
+
+
+          <g id="vidrios" class="parent">
             <path style="fill:#B90624;" d="M198.9,91.5h11.8c0,0,60.2-49.8,89.4-62.8c0,0-0.2-3.1-3.4-1.5C296.7,27.2,260.6,44.7,198.9,91.5z"
               />
-          </g>
-          <g id="medallon" class="parent">
             <path style="fill:#B90624;" d="M705.4,24.7c0,0,6.1-2.2,12.8,0c0,0,30.5,50,35.5,67.2l-20,0.6C733.8,92.5,708.2,30.3,705.4,24.7z"
               />
-          </g>
-          <g id="puertas-delanteras" class="parent">
+            <path style="fill:#B90624;" d="M264.8,62.5c0,0-8.3-0.2-10.8,8.2l-3.1,9.2l-1.1,4l-0.8,2.6l0.3,2.4l3-0.1l0.7,1.6l-1.8,0.6l0.4,2.1
+              l4.6,0.2l2.3,1.6c0,0,14,2,20.4-0.8c0,0,1.7-7.7,0.9-13.9c0,0-1.6-0.1-2.6-0.1c0,0,0.4-12.2-2.6-17.4
+              C274.5,62.6,270.7,62.1,264.8,62.5z"/>
             <path style="fill:#B90624;" d="M240.6,87.1l11.6-11.3l-1.9,8.4l-1.6,2.8l0.9,2.1l2.6,0.3l0.4,1l-1,1.4l1,1.5l3.3-0.2l2.5,1.7
               c0,0,17.1,1.4,20.9-1.9c0,0,1.2-8.4,0.6-12.8l-3.2,0.1c0,0,0.1-12.1-1.4-16.5c0,0-1.3-1.3-3.9-1.3c0,0,11.3-11.1,39.8-25.3
               c0,0,21.3-12.8,81.7-12.5l-5.9,67.8c0,0-130.4,5.3-145.7,5.3C241.2,97.7,228.9,99,240.6,87.1z"/>
-          </g>
-          <g id="puertas-traseras" class="parent">
             <path style="fill:#B90624;" d="M419.5,23.6c0,0,2.1,50.5,1.7,68.1L564.7,89c0,0-8.3-35.3-24.7-66C540,22.9,456,21.9,419.5,23.6z"/>
-          </g>
-          <g id="costados-traseros" class="parent">
+
             <path style="fill:#B90624;" d="M588.2,21.6c0,0-3.7-0.2-4.3,0.9c0,0-1.7,1.4,1.5,6l33.5,53.6c0,0,3.3,6.6,13.2,6.6l98.3-0.7
               c0,0-15.5-44.4-29.3-64.2C701,23.8,609.8,21.8,588.2,21.6z"/>
           </g>
+
+
           </svg>
         </div>
 
@@ -187,23 +183,18 @@
             <div class="row">
               <div class="col-sm-8 col-sm-offset-2 area-content">
                 <p class="area-replace-content">
-                  <span class="techo">Techo: <br> test</span>
-                  <span class="coronas">Coronas: <br> test</span>
-                  <span class="postes">Postres: <br> test</span>
-                  <span class="puertas">Puertas: <br> test</span>
-                  <span class="costados">Costados: <br> test</span>
-                  <span class="quinta-puerta">Quinta Puerta: <br> test</span>
-                  <span class="conchas">Conchas: <br> test</span>
-                  <span class="contra-chapas">Contra Chapas: <br> test</span>
-                  <span class="retrovisor">Retrovisor: <br> test</span>
-                  <span class="faros-traseros">Faros traseros: <br> test</span>
-                  <span class="piso">Piso: <br> test</span>
-                  <span class="pared-de-fuego">Pared de fuego: <br> test</span>
-                  <span class="parabrisas">Parabrisas: <br> test</span>
-                  <span class="medallon">Medallón: <br> test</span>
-                  <span class="puertas-delanteras">Puertas delanteras: <br> test</span>
-                  <span class="puertas-traseras">Puertas Traseras: <br> test</span>
-                  <span class="costados-traseros">Costados Traseros: <br> test</span>
+                  <span class="techo">Techo: <br> Protección total del techo, si se cuanta con techo solar se clausura y protege con cristal balístico.</span>
+                  <span class="coronas">Coronas: <br> Reforzados para soportar grandes impactos.</span>
+                  <span class="puertas">Puertas: <br> Protección a los costados del auto para impactos directos.</span>
+                  <span class="costados">Costados: <br> Soporta impactos cercanos y protege la parte posterior de habitáculo.</span>
+                  <span class="quinta-puerta">Quinta Puerta: <br> Cualquier parte del auto es protegida por los mejores materiales del mercado.</span>
+                  <span class="conchas">Conchas: <br> Protección al área baja de la unidad.</span>
+                  <span class="contra-chapas">Contra Chapas: <br> Reforzadas para soportar peso adicional.</span>
+                  <span class="faros-traseros">Faros traseros: <br> Ningún espacio es pequeño, la protección envuelve cualquier parte de la unidad.</span>
+                  <span class="piso">Piso: <br> Protección contra ataques explosivos.</span>
+                  <span class="pared-de-fuego">Pared de fuego: <br> Protección para el habitáculo del vehículo, ubicado entre el motor y tablero del auto.</span>
+
+                  <span class="vidrios">Parabrisas: <br> Protección con vidrios de distintos espesores, según el área y nivel de blindaje.</span>
                 </p>
               </div>
             </div>

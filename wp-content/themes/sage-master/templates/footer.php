@@ -2,7 +2,9 @@
   <div id="footer_gray" class="text-center">
     <div class="container">
       <p class="uppercase">Certificado por:</p>
-      <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/certified.png">
+      <a href="<?php bloginfo('stylesheet_directory'); ?>/assets/images/bsafe_2016.pdf" target="_blank">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/certified.png">
+      </a>
     </div>
   </div>
   <div id="footer_blue" class="text-center">

@@ -116,7 +116,8 @@
 
 
         $('.car-container span').on('mouseover', function() {
-          var name = $(this).attr('class');
+          var name = $(this).attr('id');
+          console.log(name)
 
           $('.area-replace-content span').each(function() {
             if ($(this).attr('class') === name) {
