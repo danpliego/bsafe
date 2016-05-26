@@ -34,25 +34,11 @@
 
         <div class="levels-replace">
           <div class="row">
-            <div class="col-sm-4 col-xs-6 text-center level">
-              <div class="wrapper">
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-2.png">
-                <h4>
-                  NIVEL 2:
-                </h4>
-                <p>
-                  Especial para protejer de proyectiles 9 mm y .38 especial.
-                </p>
-                <a href="#" class="toggle-modal level-1">
-                  Más información <i class="fa fa-chevron-right"></i>
-                </a>
-              </div>
-            </div>
-            <div class="col-sm-4 col-xs-6 text-center level">
+            <div class="col-sm-3 col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-3.png">
                 <h4>
-                  NIVEL 3:
+                  NIVEL 3 / B4:
                 </h4>
                 <p>
                   Especial para protejer de proyectiles .357 magnum y .44 magnum.
@@ -62,11 +48,11 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-4 col-xs-6 text-center level">
+            <div class="col-sm-3 col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-4.png">
                 <h4>
-                  NIVEL 4:
+                  NIVEL 4 / B5:
                 </h4>
                 <p>
                   Especial para protejer de proyectiles CAL Carbine y AK-47
@@ -76,11 +62,11 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-4 col-xs-6 col-sm-offset-2 text-center level">
+            <div class="col-sm-3 col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-5.png">
                 <h4>
-                  NIVEL 5:
+                  NIVEL 5 / B6:
                 </h4>
                 <p>
                   Especial para protejer de proyectiles M80, Winchester FMJ, M-16/193
@@ -90,11 +76,11 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-4 col-xs-6 col-xs-offset-3 text-center level">
+            <div class="col-sm-3 col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-6.png">
                 <h4>
-                  NIVEL 6:
+                  NIVEL 6 / B7:
                 </h4>
                 <p>
                   Especial para protejer de proyectiles FAL 30-60.

@@ -25,7 +25,7 @@
   }
 }
 .section {
-  padding: 80px 0 100px;
+  padding: 50px 0 70px;
   background: $white;
 }
 .border-right {
@@ -37,7 +37,7 @@
   .img-container {
     position: absolute;
     right: 0px;
-    top: 70px;
+    top: 10px;
     text-align: right;
     z-index: 1;
     img {
@@ -51,7 +51,7 @@
     h1, small {
       color: $white;
     }
-    padding-top: 150px;
+    padding-top: 70px;
     background: url('../images/bg-levels.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -107,7 +107,7 @@
   }
   #levels-slider {
     .item {
-      padding-top: 200px;
+      padding-top: 70px;
     }
     img {
       margin: 0px auto;
@@ -116,7 +116,7 @@
     .carousel-control {
       background: none;
       text-shadow: none;
-      margin-top: 200px;
+      margin-top: 70px;
       width: 10%;
       span {
         color: $black;
@@ -134,8 +134,14 @@
     -o-background-size: cover;
     background-size: cover;
     color: $white;
-    h1, small, a {
+    h1, small {
       color: $white;
+    }
+    hr {
+      margin: 25px 0;
+    }
+    .areas-types h3, a {
+      color: $gray-dark;
     }
     a:hover, a:focus, a:active, a.active {
       color: $red;
@@ -145,6 +151,7 @@
   .area-content {
     .area-replace-content {
       min-height: 42px;
+      color: $black;
       span {
         display: none;
       }
@@ -167,6 +174,21 @@
       position: relative;
       display: inline-block;
       max-width: 850px;
+      .vidrios-logo {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: #eee;
+        overflow: hidden;
+        img {
+          padding-top: 17px;
+          width: 103px;
+        }
+      }
       img {
         width: 100%;
       }
@@ -246,7 +268,7 @@
   .areas-car-info {
     margin-top: -140px;
     padding-bottom: 60px;
-    padding-top: 200px;
+    padding-top: 160px;
     background: $white;
     color: $gray;
     font-weight: bold;

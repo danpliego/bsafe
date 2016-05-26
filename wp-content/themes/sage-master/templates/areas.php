@@ -12,44 +12,7 @@
     </div>
     <div class="collapse" id="collapseAreas">
       <div class="container visible-xs">
-        <div class="row areas-types">
-          <div class="col-sm-5 col-lg-offset-2">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3 class="unmargin-top">Zona Opaca:</h3>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="techo">Techo</a></li>
-                  <li><a href="#" class="coronas">Coronas</a></li>
-                  <li><a href="#" class="postes">Postes A,B,C,D</a></li>
-                  <li><a href="#" class="marcos">Marcos</a></li>
-                  <li><a href="#" class="puertas">Puertas</a></li>
-                  <li><a href="#" class="costados">Costados</a></li>
-                </ul>
-              </div>
-              <div class="col-sm-5">
-                <ul class="list-unstyled">
-                  <li><a href="#" class="quinta-puerta">Quinta puerta</a></li>
-                  <li><a href="#" class="conchas">Conchas de saplicadero</a></li>
-                  <li><a href="#" class="contra-chapas">Contra chapas</a></li>
-                  <li><a href="#" class="retrovisor">Espejo retrovisor</a></li>
-                  <li><a href="#" class="faros-traseros">Faros traseros</a></li>
-                  <li><a href="#" class="piso">Piso</a></li>
-                  <li><a href="#" class="pared-de-fuego">Pared de fuego</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <h3 class="unmargin-top">ZONA TRANSPARENTE:</h3>
-            <ul class="list-unstyled">
-              <li><a href="#" class="parabrisas">Parabrisas</a></li>
-              <li><a href="#" class="medallon">Medallon / quinta puerta</a></li>
-              <li><a href="#" class="puertas-delanteras">Puertas delanteras</a></li>
-              <li><a href="#" class="puertas-traseras">Puertas traseras</a></li>
-              <li><a href="#" class="costados-traseros">Costados traseros</a></li>
-            </ul>
-          </div>
-        </div>
+        <?php get_template_part('templates/areas_types', 'areas_types'); ?>
       </div>
 
       <div class="areas-car text-center hidden-xs">
@@ -74,6 +37,10 @@
            <span id="vidrios" class="puertas-delanteras"></span>
            <span id="vidrios" class="puertas-traseras"></span>
            <span id="vidrios" class="costados-traseros"></span>
+
+           <div class="vidrios-logo">
+             <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/vidrios.jpg">
+           </div>
 
 
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -199,6 +166,8 @@
               </div>
             </div>
           </div>
+          <hr>
+          <?php get_template_part('templates/areas_types', 'areas_types'); ?>
         </div>
 
       </div>
