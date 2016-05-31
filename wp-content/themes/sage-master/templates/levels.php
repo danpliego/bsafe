@@ -34,7 +34,7 @@
 
         <div class="levels-replace">
           <div class="row">
-            <div class="col-sm-3 col-xs-6 text-center level">
+            <div class="col-sm-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-3.png">
                 <h4>
@@ -43,12 +43,12 @@
                 <p>
                   Especial para protejer de proyectiles .357 magnum y .44 magnum.
                 </p>
-                <a href="#" class="toggle-modal level-2">
+                <a href="#" class="toggle-modal level-3">
                   Más información <i class="fa fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center level">
+            <div class="col-sm-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-4.png">
                 <h4>
@@ -57,12 +57,12 @@
                 <p>
                   Especial para protejer de proyectiles CAL Carbine y AK-47
                 </p>
-                <a href="#" class="toggle-modal level-3">
+                <a href="#" class="toggle-modal level-4">
                   Más información <i class="fa fa-chevron-right"></i>
                 </a>
               </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center level">
+            <div class="col-sm-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-5.png">
                 <h4>
@@ -76,7 +76,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-3 col-xs-6 text-center level">
+            <div class="col-sm-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-6.png">
                 <h4>
@@ -85,7 +85,7 @@
                 <p>
                   Especial para protejer de proyectiles FAL 30-60.
                 </p>
-                <a href="#" class="toggle-modal level-5">
+                <a href="#" class="toggle-modal level-6">
                   Más información <i class="fa fa-chevron-right"></i>
                 </a>
               </div>
@@ -99,12 +99,6 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-info/level-1.png" class="img-responsive">
-                </div>
-                <div class="item">
-                  <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-info/level-2.png" class="img-responsive">
-                </div>
-                <div class="item">
                   <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-info/level-3.png" class="img-responsive">
                 </div>
                 <div class="item">
@@ -112,6 +106,9 @@
                 </div>
                 <div class="item">
                   <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-info/level-5.png" class="img-responsive">
+                </div>
+                <div class="item">
+                  <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-info/level-6.png" class="img-responsive">
                 </div>
               </div>
 

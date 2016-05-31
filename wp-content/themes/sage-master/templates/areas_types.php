@@ -28,11 +28,11 @@
   <div class="col-sm-4">
     <h3 class="unmargin-top">ZONA TRANSPARENTE:</h3>
     <ul class="list-unstyled">
-      <li><a href="#" class="vidrios">Parabrisas</a></li>
-      <li><a href="#" class="vidrios">Medallon / quinta puerta</a></li>
-      <li><a href="#" class="vidrios">Puertas delanteras</a></li>
-      <li><a href="#" class="vidrios">Puertas traseras</a></li>
-      <li><a href="#" class="vidrios">Costados traseros</a></li>
+      <li><a href="#" id="vidrios" class="parabrisas">Parabrisas</a></li>
+      <li><a href="#" id="vidrios" class="medallon">Medallon / quinta puerta</a></li>
+      <li><a href="#" id="vidrios" class="puertas-delanteras">Puertas delanteras</a></li>
+      <li><a href="#" id="vidrios" class="puertas-traseras">Puertas traseras</a></li>
+      <li><a href="#" id="vidrios" class="costados-traseros">Costados traseros</a></li>
     </ul>
   </div>
 </div>

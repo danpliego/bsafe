@@ -124,6 +124,10 @@
               $(this).siblings().hide();
             }
           });
+        
+          if ($(this).attr('class') === 'vidrios') {
+            $('.vidrios-logo').show();
+          }
 
           $('.areas-types a').each(function() {
             if ($(this).attr('class') === name) {
@@ -136,9 +140,6 @@
               $(this).css('opacity', '.8');
               $(this).siblings().css('opacity', '0');
 
-              if ($(this).attr('id') === 'vidrios') {
-                $('.vidrios-logo').show()
-              }
             }
           });
 
@@ -146,16 +147,17 @@
 
         $('.car-container span').mouseleave(function() {
           $('.car-container svg .parent').css('opacity', '0');
-          $('.areas-types a').removeClass('active')
-          $('.vidrios-logo').hide()
+          $('.areas-types a').removeClass('active');
+          $('.vidrios-logo').hide();
         });
 
 
         $('.areas-types a').on('mouseover', function() {
           var name = $(this).attr('class');
+          var id = $(this).attr('id');
 
-          if (name === 'vidrios') {
-            $('.vidrios-logo').show()
+          if (id === 'vidrios') {
+            $('.vidrios-logo').show();
           }
 
           $('.car-container svg .parent').each(function() {
@@ -169,8 +171,8 @@
 
         $('.areas-types a').mouseleave(function() {
           $('.car-container svg .parent').css('opacity', '0');
-          $('.vidrios-logo').hide()
-        })
+          $('.vidrios-logo').hide();
+        });
 
       },
       finalize: function() {

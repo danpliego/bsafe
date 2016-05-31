@@ -52,7 +52,7 @@
       color: $white;
     }
     padding-top: 70px;
-    background: url('../images/bg-levels.png') no-repeat center center;
+    background: url('../images/bg-levels.jpg') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -107,7 +107,7 @@
   }
   #levels-slider {
     .item {
-      padding-top: 70px;
+      padding-top: 150px;
     }
     img {
       margin: 0px auto;
@@ -116,7 +116,7 @@
     .carousel-control {
       background: none;
       text-shadow: none;
-      margin-top: 70px;
+      margin-top: 150px;
       width: 10%;
       span {
         color: $black;
@@ -128,7 +128,7 @@
 #areas {
   .section-head {
     padding-bottom: 0;
-    background: url('../images/bg-zonas.png') no-repeat center center fixed;
+    background: url('../images/bg-zonas.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -244,22 +244,22 @@
         &#pared-de-fuego {
           top: 140px; right: 555px;
         }
-        &.retrovisor {
+        &#retrovisor {
           top: 90px; right: 505px;
         }
-        &.parabrisas {
+        &#parabrisas {
           top: 70px; right: 540px;
         }
-        &.medallon {
+        &#medallon {
           top: 40px; right: 55px;
         }
-        &.puertas-delanteras {
+        &#puertas-delanteras {
           top: 65px; right: 435px;
         }
-        &.puertas-traseras {
+        &#puertas-traseras {
           top: 65px; right: 300px;
         }
-        &.costados-traseros {
+        &#costados-traseros {
           top: 60px; right: 105px;
         }
       }
