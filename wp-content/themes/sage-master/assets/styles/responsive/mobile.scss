@@ -39,7 +39,7 @@
   // Reset
 
   h1 {
-    font-size: 40px;
+    font-size: 32px;
   }
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
@@ -83,17 +83,19 @@
   #home {
     padding-top: 83px;
   	#home-slider {
-  		height: 400px;
+  		height: 300px;
   		.carousel-caption {
   			text-align: center;
-        margin-top: 50px;
+        margin-top: 0px;
+        padding-top: 0;
   		}
       .carousel-control {
         width: 10%;
       }
   		img {
   			max-width: none;
-  			height: 400px;
+  			height: 300px;
+        margin-left: -150px!important;
   		}
       .carousel-inner img {
         margin: auto;

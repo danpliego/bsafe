@@ -124,7 +124,7 @@
               $(this).siblings().hide();
             }
           });
-        
+
           if ($(this).attr('class') === 'vidrios') {
             $('.vidrios-logo').show();
           }
@@ -173,6 +173,17 @@
           $('.car-container svg .parent').css('opacity', '0');
           $('.vidrios-logo').hide();
         });
+
+        window.deviceWidth = $(document).width()
+        window.minTabletWidth = 768
+
+        window.isWebMobile = deviceWidth < minTabletWidth
+
+        if (window.isWebMobile) {
+          $('#header a').on('click', function(){
+            $('.navbar-toggle').click()
+          });
+        }
 
       },
       finalize: function() {
