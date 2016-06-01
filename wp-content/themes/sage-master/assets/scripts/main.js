@@ -152,6 +152,9 @@
         });
 
 
+        $('.areas-types a').on('click', function(e) {
+          e.preventDefault();
+        });
         $('.areas-types a').on('mouseover', function() {
           var name = $(this).attr('class');
           var id = $(this).attr('id');
@@ -174,14 +177,14 @@
           $('.vidrios-logo').hide();
         });
 
-        window.deviceWidth = $(document).width()
-        window.minTabletWidth = 768
+        window.deviceWidth = $(document).width();
+        window.minTabletWidth = 768;
 
-        window.isWebMobile = deviceWidth < minTabletWidth
+        window.isWebMobile = deviceWidth < minTabletWidth;
 
         if (window.isWebMobile) {
           $('#header a').on('click', function(){
-            $('.navbar-toggle').click()
+            $('.navbar-toggle').click();
           });
         }
 
