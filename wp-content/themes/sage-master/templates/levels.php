@@ -6,10 +6,6 @@
         <small>
           BLINDAJE
         </small>
-        <a class="toggle-collapse visible-xs" role="button" data-toggle="collapse" href="#collapseLevels" aria-expanded="false" aria-controls="collapseLevels">
-          <i class="fa fa-chevron-down closed"></i>
-          <i class="fa fa-chevron-up open"></i>
-        </a>
       </h1>
     </div>
   </div>
@@ -34,7 +30,7 @@
 
         <div class="levels-replace">
           <div class="row">
-            <div class="col-sm-6 text-center level">
+            <div class="col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-3.png">
                 <h4>
@@ -48,7 +44,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 text-center level">
+            <div class="col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-4.png">
                 <h4>
@@ -62,7 +58,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 text-center level">
+            <div class="col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-5.png">
                 <h4>
@@ -76,7 +72,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 text-center level">
+            <div class="col-xs-6 text-center level">
               <div class="wrapper">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/images/level-6.png">
                 <h4>

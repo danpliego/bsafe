@@ -5,10 +5,6 @@
         <h1 class="unmargin-top">
             El Blindaje
             <small>Más Confiable</small>
-          <a class="toggle-collapse visible-xs" role="button" data-toggle="collapse" href="#collapseAbout" aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-chevron-down closed"></i>
-            <i class="fa fa-chevron-up open"></i>
-          </a>
         </h1>
         <div class="collapse in" id="collapseAbout">
           <p>

@@ -4,10 +4,6 @@
       <h1 class="text-center page-title">
         Areas de
         <small>blindaje</small>
-        <a class="toggle-collapse visible-xs" role="button" data-toggle="collapse" href="#collapseAreas" aria-expanded="false" aria-controls="collapseAreas">
-          <i class="fa fa-chevron-down closed"></i>
-          <i class="fa fa-chevron-up open"></i>
-        </a>
       </h1>
     </div>
     <div class="collapse in" id="collapseAreas">

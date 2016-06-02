@@ -91,12 +91,6 @@
   .more-info {
     border-top: 1px solid $gray-light;
     display: none;
-    background: $white;
-    z-index: 1; // 1 above navbar
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
     .close-more {
       font-size: 32px;
       position: absolute;
@@ -293,8 +287,8 @@
     background: rgba($blue, .9);
     color: $white;
     height: 650px;
-    h1, h3 {
-      color: $white;
+    h1, h3, a {
+      color: $white!important;
     }
     .wpcf7-form {
       font-weight: bold;

@@ -24,11 +24,13 @@
           e.preventDefault();
           $('.more-info').fadeIn();
           $('#levels-slider').carousel($(this).index());
+          $('.level').hide();
         });
 
         $('.more-info .close-more').on('click', function(e) {
           e.preventDefault();
           $('.more-info').fadeOut();
+          $('.level').show();
         });
 
         function showGoogleMaps() {
@@ -187,6 +189,10 @@
             $('.navbar-toggle').click();
           });
         }
+
+        $('.navbar-nav a').on('click', function() {
+          $('.navbar-collapse').removeClass('in');
+        });
 
       },
       finalize: function() {
