@@ -13,7 +13,7 @@
       </h1>
     </div>
   </div>
-  <div class="collapse" id="collapseLevels">
+  <div class="collapse in" id="collapseLevels">
     <div class="section">
       <div class="container">
         <div class="row page-title">

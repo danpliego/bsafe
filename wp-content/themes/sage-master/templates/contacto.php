@@ -8,7 +8,7 @@
       <i class="fa fa-chevron-down closed"></i>
       <i class="fa fa-chevron-up open"></i>
     </a>
-    <div class="collapse" id="collapseContact">
+    <div class="collapse in" id="collapseContact">
       <p class="text-right">
         <strong>
           Carretera Federal México Toluca 3128

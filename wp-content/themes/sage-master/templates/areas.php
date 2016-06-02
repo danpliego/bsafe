@@ -10,7 +10,7 @@
         </a>
       </h1>
     </div>
-    <div class="collapse" id="collapseAreas">
+    <div class="collapse in" id="collapseAreas">
       <div class="container visible-xs">
         <?php get_template_part('templates/areas_types', 'areas_types'); ?>
       </div>

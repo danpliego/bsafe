@@ -10,7 +10,7 @@
             <i class="fa fa-chevron-up open"></i>
           </a>
         </h1>
-        <div class="collapse" id="collapseAbout">
+        <div class="collapse in" id="collapseAbout">
           <p>
             Debido a la situacion que vivimos en nuestro pais, <strong>B-SAFE</strong> se caracteriza por brindarle la mayor seguridad que su familia y seres queridos necesitan, es por eso que nos preocupamos en brindarle la mayor tranquilidad que existe.
           </p>
